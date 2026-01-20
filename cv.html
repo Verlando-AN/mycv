@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Verlando Akbar Nugraha</title>
+    <style>
+        /* CSS RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Font standar profesional */
+            background-color: #ffffff;
+            color: #222; /* Hitam agak pudar agar nyaman dibaca, terlihat lebih premium */
+            line-height: 1.5;
+            font-size: 11pt;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* HEADER SECTION */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .role {
+            font-size: 13pt;
+            font-weight: normal;
+            margin-bottom: 20px;
+            display: block;
+            letter-spacing: 1px;
+        }
+
+        .contact-bar {
+            font-size: 10pt;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .contact-item {
+            display: inline-block;
+        }
+
+        .contact-item a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .separator {
+            margin: 0 5px;
+            color: #000;
+        }
+
+        /* SECTION STYLING */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+            padding-bottom: 3px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* EXPERIENCE & PROJECTS ENTRY */
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .entry-date {
+            font-size: 10pt;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .tech-stack {
+            display: block;
+            font-size: 9pt;
+            color: #444;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* SKILLS LAYOUT */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dua kolom rapi */
+            column-gap: 40px;
+        }
+
+        /* PRINT OPTIMIZATION */
+        @media print {
+            body { padding: 0; font-size: 10pt; }
+            a { text-decoration: none; color: #000; }
+            .separator { display: inline; }
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .entry-header { flex-direction: column; }
+            .contact-bar { flex-direction: column; gap: 2px; }
+            .separator { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>VERLANDO AKBAR NUGRAHA</h1>
+            <span class="role">FULL STACK DEVELOPER</span>
+            
+            <div class="contact-bar">
+                <span class="contact-item">Bandar Lampung, Indonesia</span>
+                <span class="separator">|</span>
+                <span class="contact-item"><a href="mailto:verlandoakbar77@gmail.com">verlandoakbar77@gmail.com</a></span>
+                <span class="separator">|</span>
+                <span class="contact-item"><a href="https://wa.me/6283170604256" target="_blank">wa.me/6283170604256</a></span>
+                <span class="separator">|</span>
+                <span class="contact-item"><a href="https://blogme-two.vercel.app/" target="_blank">blogme-two.vercel.app</a></span>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                A freelance Full Stack Developer with an academic background from Universitas Teknokrat Indonesia. 
+                Experienced in developing web applications using Laravel and mobile applications with Flutter for personal projects and clients. 
+                Possess strong problem-solving skills and the ability to work effectively in a team environment.
+            </p>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <ul>
+                    <li><strong>Languages:</strong> PHP, JavaScript, Typescript, C++, C#, Java, Kotlin</li>
+                    <li><strong>Web Frameworks:</strong> Laravel, CodeIgniter 4, React.js, Node.js, Bootstrap</li>
+                    <li><strong>Mobile:</strong> Flutter, Android Studio</li>
+                </ul>
+                <ul>
+                    <li><strong>Database & Tools:</strong> MySQL, Git, Figma, REST API</li>
+                    <li><strong>Other:</strong> .NET, 3D Assets, Microsoft Office, Google Workspace</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WORK EXPERIENCE & PROJECTS -->
+        <section>
+            <h2>Professional Experience & Key Projects</h2>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Freelance Programmer</span>
+                    <span class="entry-date">2023 – Present</span>
+                </div>
+                <span class="entry-subtitle">Self-Employed</span>
+                <ul>
+                    <li>Developed various websites using React.js, Node.js, Laravel, CI4, and .NET tailored to client requirements.</li>
+                    <li>Developed mobile applications based on Android Studio and Flutter.</li>
+                    <li>Designed and implemented robust APIs for web applications.</li>
+                    <li>Communicated directly with clients to gather project requirements and ensure deliverables met specifications.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Full Stack Developer Intern</span>
+                    <span class="entry-date">Jul 2024 – Sep 2024</span>
+                </div>
+                <span class="entry-subtitle">PT Microdata Indonesia</span>
+                <ul>
+                    <li>Built and developed a Laravel-based Inventory Management web application.</li>
+                    <li>Collaborated with the front-end team to ensure seamless API integration.</li>
+                    <li>Conducted unit testing and debugging to optimize application performance.</li>
+                </ul>
+            </div>
+
+            <!-- Highlighted Projects -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Gallery Keripik Lampung</span>
+                    <span class="entry-date">Sep 2025</span>
+                </div>
+                <span class="tech-stack">Tech Stack: Laravel, Javascript, MySQL, Bootstrap</span>
+                <p>E-commerce website for selling Lampung chips products featuring an interactive UI and automatic logistics and payment APIs.</p>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Inventory Management System</span>
+                    <span class="entry-date">Jul 2024</span>
+                </div>
+                <span class="tech-stack">Tech Stack: Laravel, MySQL, Bootstrap</span>
+                <p>Web application for managing stock with CRUD features, user authentication, and an analytics dashboard.</p>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">TeknoNews App & Website</span>
+                    <span class="entry-date">Jun 2023</span>
+                </div>
+                <span class="tech-stack">Tech Stack: Flutter, Firebase, Laravel, JavaScript</span>
+                <p>Mobile application and campus news website designed to deliver technology news with bookmark and notification features.</p>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Bachelor of Informatics</span>
+                    <span class="entry-date">2021 – 2025</span>
+                </div>
+                <span class="entry-subtitle">Universitas Teknokrat Indonesia, Faculty of Engineering and Computer Science</span>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li><strong>Certifications (2024):</strong> Web Programmer, Service Oriented Programmer, Information Security, Basic Artificial Intelligence II, Senior Game Developer.</li>
+                <li><strong>Awards:</strong> Fullstack Programmer Intern at PT. Microdata Indonesia (2025), 2nd Place Academic Expo (2024).</li>
+            </ul>
+        </section>
+
+        <!-- RELEVANT SKILLS (SOFT & OFFICE) -->
+        <section>
+            <h2>Relevant Competencies</h2>
+            <div class="skills-grid">
+                <ul>
+                    <li>Technical Documentation</li>
+                    <li>Project Management</li>
+                    <li>Critical Thinking</li>
+                </ul>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
